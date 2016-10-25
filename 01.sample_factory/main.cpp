@@ -55,6 +55,8 @@ int main(int argc, char *argv[])
 	Animal *pa = sfactory.creatAnimal(string(argv[1]));
 	if (pa) {
 		pa->display();
+		delete pa;
+		pa = NULL;
 	}
 
 	return 0;
